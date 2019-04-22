@@ -1,0 +1,32 @@
+git修改文件后，怎么提交到远程仓库
+1.git status 查看git是否有修改内容需要提交
+2.git add 指向需要提交的内容文件
+3.git commit 提交到本地库
+4.git push origin master 提交到远程仓库
+
+
+
+
+
+
+1.输入指令：git add 文件名称或者 git add .
+
+2.输入指令：git commit -m "这是注释内容"
+
+3.这一步从本地仓库或本地分支获取并集成(整合)，输入指令：git pull origin master
+
+4.如果过程中出现‘please enter a commit message…’,首先按下esc退出键然后输入 ：wq即可
+
+5.输入指令：git push -u origin master
+
+
+
+1、根据提示新建仓库
+2、成功之后------如果从仓库更新文件
+git pull
+查看更新内容
+git status
+3、提交本地
+git add “文件名称”（ git add .添加全部或者添加更改后的文件）
+4、git commit -m "备注"
+5、git push -u origin master
